@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<area>                                              <-- needed either side of the area -->
+    <number>0</number>                              <-- the number of the area, needed to go to this place -->
+    <title>Null Forest</title>                      <-- title of the area, displayed at the top of the page -->
+    <subtitle>nowhere zone</subtitle>               <-- subtitle of the area, displayed just under the title -->
+    <desc>The place that shouldn't exist</desc>     <-- the main content of the area, everything that should appear minus the extras -->
+    <north>Null</north>                             <-- the area number of the place north of the player -->
+    <east>Null</east>                               <-- the area number of the place east of the player -->
+    <south>Null</south>                             <-- the area number of the place south of the player -->    
+    <west>Null</west>                               <-- the area number of the place west of the player -->
+    <act1>Null</act1>                               <-- the area number that action 1 will take you to if you have the requirement (reqa1) -->
+    <act2>Null</act2>                               <-- the area number that action 2 will take you to if you have the requirement (reqa2) -->
+    <act3>Null</act3>                               <-- the area number that action 3 will take you to if you have the requirement (reqa3) -->
+    <act4>Null</act4>                               <-- the area number that action 4 will take you to if you have the requirement (reqa4) -->
+    <ext1>Null</ext1>                               <-- extra text added if you have the requirement (reqe1) -->
+    <ext2>Null</ext2>                               <-- extra text added if you have the requirement (reqe2) -->
+    <ext3>Null</ext3>                               <-- extra text added if you have the requirement (reqe3) -->
+    <ext4>Null</ext4>                               <-- extra text added if you have the requirement (reqe4) -->
+    <reqn>Null</reqn>                               <-- requirement to go north -->
+    <reqe>Null</reqe>                               <-- requirement to go east -->
+    <reqs>Null</reqs>                               <-- requirement to go south -->
+    <reqw>Null</reqw>                               <-- requirement to go north -->
+    <reqa1>Null</reqa1>                             <-- requirement to go to the location of action 1 -->
+    <reqa2>Null</reqa2>                             <-- requirement to go to the location of action 2 -->
+    <reqa3>Null</reqa3>                             <-- requirement to go to the location of action 3 -->
+    <reqa4>Null</reqa4>                             <-- requirement to go to the location of action 4 -->
+    <reqe1>Null</reqe1>                             <-- requirement to show extra text 1 -->
+    <reqe2>Null</reqe2>                             <-- requirement to show extra text 2 -->
+    <reqe3>Null</reqe3>                             <-- requirement to show extra text 3 -->
+    <reqe4>Null</reqe4>                             <-- requirement to show extra text 4 -->
+    <itemn>Null</itemn>                             <-- item given when going north -->
+    <iteme>Null</iteme>                             <-- item given when going east -->
+    <items>Null</items>                             <-- item given when going south -->
+    <itemw>Null</itemw>                             <-- item given when going west -->
+    <item1>Null</item1>                             <-- item given when taking action 1 -->
+    <item2>Null</item2>                             <-- item given when taking action 2 -->
+    <item3>Null</item3>                             <-- item given when taking action 3 -->
+    <item4>Null</item4>                             <-- item given when taking action 4 -->
+</area>
+
+<area>
+    <number>1</number>
+    <title>first place</title>
+    <subtitle>the other place is north</title>
+    <desc>this is the first place. Try going north to the other place</desc>
+    <north>2</north>
+</area>
+
+<area>
+    <number>2</number>
+    <title>other place</title>
+    <subtitle>the first place is south</subtitle>
+    <desc>You've entered the other place. You'll need a key to get back, but there's one in this room. You can grab the key (1)</desc>
+    <south>1</south>
+    <item1>Key</item1>
+    <reqs>Key</reqs>
+    <reqe1>Key</reqe1>
+    <ext1>You've got the key!</ext1>
+</area>
+
+<area>
+    <number>3</number>
+    <title>Place</title>
+    <desc>Sub-place</desc>
+    <lockedtext>
+        <text>You've got the thing!</text>
+        <req>
+            <item>thething</item>
+            <count>1</count>
+            <inverted>false</inverted>
+        </req>
+    </lockedtext>
+    <action>
+        <text>unlock</text> <-- only show this action if you have the requirement and DO NOT have the gift -->
+        <req>
+            <item>keys</item>
+            <count>3</count>
+            <inverted>false</inverted>
+        </req>
+        <gift>treasure</gift>
+        <gifts>50</gifts>
+    </action>
+    <exit>
+        <area>4</area>
+        <req>
+            <item>illnesses</item>
+            <count>1</count>
+            <inverted>true</count>
+        </req>
+        <text>North</text>
+    </exit>
+</area>

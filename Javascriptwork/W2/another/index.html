@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ies=edge">
+    <link rel="stylesheet" href="style.css"></link>
+    
+    <script src="jquery-3.4.1.js"></script>
+    <title>Document</title>
+    <script type="text/javascript" src="playername.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#sector").hide();
+        });
+        $("#nameSpace").append(player.longName)
+    });
+    </script>
+
+</head>
+<body>
+    <div class="flexcontainer">
+        <div class="flexbox">
+            <h1>Groovy Forest</h1>
+            <h2>New Groove Grove</h2>
+        </div>
+        <div class="fourflexbox">
+            <div class="flexhcontainer">
+                <div class="flexbox" style="max-width:25%;height:100%">
+                    <p class="emoji">
+                            ¯\_(ツ)_/¯
+                    </p>
+                    <p style="font-size:3vh" id="nameSpace"></p>
+                    <ul>
+                        <li>❤️❤️❤️❤️❤️</li>
+                        <li>🔶🔶🔸</li>
+                        <li>🛡🛡</li>
+                        <li></li>
+                        <li>Item: Sword</li>
+                        <li>Item: Coal</li>
+                        <li>Item: Fidget spinner</li>
+                    </ul>
+                </div>
+                <div id="sector">
+                    <p>You awaken in a forest. There are many trees around. The trees are many in number, and vast in size. If you had to guess, you'd say there are at least two trees. Like, maybe a lot more. Probably not as many as a million trees, but definitely more than two. They're truly enormous and covered in bark, so they're definitely trees.
+                        You look at one and think to yourself "wow, that's definitely a load of trees". And you're right, they're all trees. They're so tree-like, they couldn't possibly be anything other than trees. Anyway, you get eaten by a grue.</p>
+                        <table id="demo"></table>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="flexhcontainer">
+                <div class="flexbox">
+                    <button class="disabled">North</button>
+                </div>
+                <div class="flexbox">
+                    <button class="disabled">East</button>
+                </div>
+                <div class="flexbox">
+                    <button class="disabled">West</button>
+                </div>
+                <div class="flexbox">
+                    <button class="disabled">South</button>
+                </div>
+                <div class="flexbox">
+                    <button class="enabled">Action 1</button>
+                </div>
+                <div class="flexbox">
+                    <button class="disabled">Action 2</button>
+                </div>
+                <div class="flexbox">
+                    <button class="disabled">Action 3</button>
+                </div>
+                <div class="flexbox">
+                    <button class="disabled">Action 4</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
