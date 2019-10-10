@@ -1,0 +1,21 @@
+h1 {
+    height:50vh;
+    width:100vw;
+    text-align:center;
+    font-size: 15vw;
+    margin:0;
+}
+
+h2 {
+    height: 8vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 8vw;
+}
+
+h3 {
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 3vw;
+}
