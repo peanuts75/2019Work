@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>doc</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    
+</head>
+<body>
+    <div class="flexcontainer vert">
+        <div class="flexcontainer horiz">
+            <div id="player0">
+                <p id="playerno1">Player 1</p>
+                <h1 id="emoticon1"></h1>
+                <p id="rating1">Stuff goes here</p>
+                <p id="characters1">Stuff goes here</p>
+                <p id="wierds1">Stuff goes here</p>
+                <p id="happy1">Stuff goes here</p>
+                <p id="comments1">Stuff goes here</p>
+            </div>
+            <div id="player1">
+                <p id="playerno2">Player 2</p>
+                <h1 id="emoticon2">ag</h1>
+                <p id="rating2">Stuff goes here</p>
+                <p id="characters2">Stuff goes here</p>
+                <p id="wierds2">Stuff goes here</p>
+                <p id="happy2">Stuff goes here</p>
+                <p id="comments2">Stuff goes here</p>
+            </div>
+        </div>
+        <div class="flexcontainer horiz">
+            <div id="attributes">
+                <button id="ratingb" onclick="decideWinner(0)">Rating</button>
+                <button id="charactersb" onclick="decideWinner(1)">Characters</button>
+                <button id="wierdsb" onclick="decideWinner(2)">Unusual Characters</button>
+                <button id="happyb" onclick="decideWinner(3)">Happiness</button>
+                <button id="commentsb" onclick="decideWinner(4)">Comments</button>
+            </div>
+            <div id="continue">
+                <button id="wintext" onclick="phase1()">Player X Wins<br>Player X's turn</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="medium.js"></script>
+</html>
