@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+html, body, div, h1, h2{
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    text-align: center;
+    font-family:Roboto;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 4px 8px 4px black;
+    font-size: 3vw;
+    font-weight: lighter;
+    padding-top: 7vw;
+}
+
+h2 {
+    background: url("../img/zen.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    color: #ddd;
+    font-family: Satisfy;
+    font-style:italic;
+    padding-top: 2vw;
+    padding-bottom: 6vw;
+}
+
+[role=banner]{
+    background-image: url("../img/huntington.png");
+
+}
