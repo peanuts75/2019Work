@@ -2,20 +2,26 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-html, body, div, h1, h2{
+*{
     border:0;
     margin:0;
     padding:0;
+    text-decoration: none;
+}
+
+html, body, h1, h2{
+    border:0;
+    margin:0;
+    padding:0px 4px 0 4px;
 }
 
 h1 {
     text-align: center;
     font-family:Roboto;
     text-transform: uppercase;
-    color: white;
+    color: #eee;
     text-shadow: 4px 8px 4px black;
-    font-size: 3vw;
-    font-weight: lighter;
+    font-size: 36pt;
     padding-top: 7vw;
 }
 
@@ -23,6 +29,8 @@ h2 {
     background: url("../img/zen.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-origin:content-box;
+    background-position: 40%;
     text-align: center;
     color: #ddd;
     font-family: Satisfy;
@@ -31,7 +39,106 @@ h2 {
     padding-bottom: 6vw;
 }
 
+h3{
+    padding: 4vw 6vw 1vw 7vw;
+    font-family: Roboto;
+    text-shadow: 0px 0px 1px black;
+    font-size: 12pt;
+}
+
+.summary a , .explanation a, .requirements a{
+    color: #333;
+    text-decoration:none;
+    text-shadow: 0px 0px 1px #3336;
+}
+
+.summary a:hover, .explanation a:hover, .requirements a:hover{
+    text-decoration: black underline solid;
+}
+
+abbr{
+    color:#333;
+    text-decoration:none;
+}
+
 [role=banner]{
     background-image: url("../img/huntington.png");
+}
 
+[role=banner] abbr{
+    color:#ddd;
+}
+
+.participation, .benefits{
+    background-color:#0609;
+    background-image: url("../img/bamboo.png");
+    padding:1vw 6vw 1vw 7vw;;
+    border: 0;
+    margin: 0;
+}
+
+.participation p, .benefits p{
+    border:0;
+    margin:0;
+    padding:0;
+    color: #eee;
+}
+
+.participation h3, .benefits h3{
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+.participation abbr, .benefits abbr{
+    color:#eee;
+    text-decoration:none;
+} 
+
+.participation a, .benefits a{
+    color: #242;
+    text-decoration:none;
+}
+
+p {
+    font-family: IBM Plex Mono;
+    padding: 1vw 6vw 3vw 7vw;
+    font-size:11pt;
+    line-height: 1.2;
+    color:#555;
+}
+
+[role=contentinfo]{
+    background-color:#797;
+    color:#aaa;
+    font-family:Roboto;
+    font-size: 18pt;
+    text-align:center;
+    padding:30px;
+}
+
+[role=contentinfo] a{
+    font-size:40pt;
+    color:white;
+    font-family:satisfy;
+}
+
+[role=contentinfo] a:hover{
+    text-decoration:white underline solid;
+}
+
+footer{
+    background-color: #355;
+    text-align: center;
+}
+
+.fab{
+    color:white;
+    font-size:32px;
+    margin: 14px;
+    
+}
+
+.fab:hover{
+    color:#bbb;
 }

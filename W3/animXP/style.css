@@ -1,0 +1,44 @@
+*{
+    border:0;
+    margin:0;
+    padding:0;
+}
+.square {
+    width:300px;
+    height:100vh;
+    background-color: #000;
+    animation-name: button;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    transition-timing-function:ease-in-out;
+    position: absolute;
+}
+
+@keyframes button{
+    0%{
+        width: 0vw;
+        left: 50vw;
+    }
+    33.33%{
+        width: 50vw;
+        left: 50vw;
+    }
+    66.66%{
+        width: 50vw;
+        left: 0vw;
+    }
+    100%{
+        width: 0vw;
+        left: 50vw;
+    }}
+
+
+
+
+
+/* 
+.square:hover{
+    border-radius:50%;
+    background-color: #0ff;
+    
+} */
