@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Name of the area",
+        "subtitle": "Subtitle of the area",
+        "desc": "The description of the area"
+    },
+    {
+        "title": "Name of the other area",
+        "subtitle": "Subtitle of the other area",
+        "desc": "The description of the other area"
+    }
+]
