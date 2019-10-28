@@ -1,0 +1,50 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 10px gray;
+          box-shadow: 0 5px 10px gray;
+}
+
+.obox {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 25%;
+  -webkit-box-shadow: 0 5px 10px black;
+          box-shadow: 0 5px 10px black;
+}
+
+.box1 {
+  height: 100px;
+  width: 100px;
+  background-color: #0000;
+  display: inline-block;
+  border-radius: 0%;
+  -webkit-box-shadow: 0 5px 10px black;
+          box-shadow: 0 5px 10px black;
+}
+
+.one {
+  color: #222;
+}
+
+.two {
+  color: #555;
+}
+
+.three {
+  color: #888;
+}
+
+.four {
+  color: #aaa;
+}
+
+.five {
+  color: #ddd;
+}
+/*# sourceMappingURL=style.css.map */

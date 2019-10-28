@@ -22,4 +22,8 @@ removeBtn.addEventListener('click', () => {
     list.removeChild(listItem);
 })
 
+document.addEventListener("click", (event => {
+    console.log(event)
+}))
+
 /*New code below*/

@@ -1,0 +1,10 @@
+*{
+    text-align: center;
+}
+
+#startButton{
+    width:900;
+    height:30;
+    border:0;
+    background-color:lightgray;
+}

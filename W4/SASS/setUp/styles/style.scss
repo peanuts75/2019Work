@@ -1,0 +1,43 @@
+$fontCol: #ff00ff;
+
+// html{
+//     color:$fontCol;
+//     p{
+//         color:blue;
+//     }
+// }
+
+@mixin shapes ($radius, $color, $shadow) {
+    height: 100px;
+    width: 100px;
+    background-color: $color;
+    display: inline-block;
+    border-radius: $radius;
+    box-shadow: 0 5px 10px $shadow;
+}
+
+.box{
+    @include shapes(50%, gray, gray)
+}
+
+.obox{
+    @include shapes(25%, white, black)
+}
+
+.box1{
+    @include shapes(0%, #0000, black)
+}
+
+$colors:(
+    one: #222,
+    two: #555,
+    three: #888,
+    four: #aaa,
+    five: #ddd
+);
+
+@each $name, $color in $colors {
+    .#{$name}{
+        color: $color;
+    }
+}
