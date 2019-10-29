@@ -1,0 +1,1 @@
+const conversion = [document.getElementById("numtype"), document.getElementById("tofrom")]
