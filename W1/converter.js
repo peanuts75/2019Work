@@ -40,7 +40,7 @@ function altNapierConvert(numberToConvert){
                 loopNo++}
         return tempString}}
 
-console.log(napierConvert("o", "from"))
-console.log(napierConvert(559252, "to"))
+console.log(napierConvert("z", "from"))
+console.log(napierConvert(33554432, "to"))
 // console.log(altNapierConvert("alphabet"))
 // console.log(altNapierConvert(559252))
