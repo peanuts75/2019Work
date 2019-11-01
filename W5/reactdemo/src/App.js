@@ -43,16 +43,84 @@ import Number from './Number'
 //         <button onClick = {() => this.switchNameHandler("Briany")}> I'mma buttn </button> 
 //       </div>)}}
 
-var x = 0
+var x = 7, y = 3, z = 0
 class App extends React.Component {
   
+  state={
+    Number: [
+      {number: `x = ${x}`},
+      {number: `y = ${y}`},
+      {number: ``}]
+  }
+
+  incrementX = () => {{x++}
+    this.setState({
+      Number: [
+        {number: `x = ${x} (${x-1} + 1)`},
+        {number: `y = ${y}`},
+        {number: ``}]
+    })
+  }
+
+  decrementX = () => {{x--}
+    this.setState({
+      Number: [
+        {number: `x = ${x} (${x+1} - 1)`},
+        {number: `y = ${y}`},
+        {number: ``}]
+    })
+  }
+
+  incrementY = () => {{y++}
+    this.setState({
+      Number: [
+        {number: `x = ${x}`},
+        {number: `y = ${y} (${y-1} + 1)`},
+        {number: ``}]
+    })
+  }
+
+  decrementY = () => {{y--}
+    this.setState({
+      Number: [
+        {number: `x = ${x}`},
+        {number: `y = ${y} (${y+1} - 1)`},
+        {number: ``}]
+    })
+  }
+
+  sumZ = () => {{z=x+y}
+    this.setState({
+      Number: [
+        {number: `x = ${x}`},
+        {number: `y = ${y}`},
+        {number: `x + y = ${z}`}]
+    })
+  }
+
+  prodZ = () => {{z=x*y}
+    this.setState({
+      Number : [
+        {number: `x = ${x}`},
+        {number: `y = ${y}`},
+        {number: `x * y = ${z}`}
+      ]
+    })
+  }
+
   render(){
     return( 
       <div className="App">
         <h1>title</h1> 
-        <Number />
-        <button onClick= {() => console.log(x++)}> </button>
-        
+        <Number number={this.state.Number[0].number}/>
+        <Number number={this.state.Number[1].number}/>
+        <Number number={this.state.Number[2].number}/>
+        <button onClick={() => this.incrementX()}>x++</button>
+        <button onClick={() => this.decrementX()}>x--</button>
+        <button onClick={() => this.incrementY()}>y++</button>
+        <button onClick={() => this.decrementY()}>y--</button>
+        <button onClick={() => this.sumZ()}>sum</button>
+        <button onClick={() => this.prodZ()}>product</button>
       </div>)}}
 
 
